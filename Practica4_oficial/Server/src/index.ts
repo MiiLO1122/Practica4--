@@ -1,1 +1,9 @@
-console.log('Hello There!')
+import express from 'express';
+
+class server{
+
+}
+
+new server{
+    
+}

@@ -1,2 +1,7 @@
 "use strict";
-console.log('Hello There!');
+Object.defineProperty(exports, "__esModule", { value: true });
+class server {
+}
+new server;
+{
+}
