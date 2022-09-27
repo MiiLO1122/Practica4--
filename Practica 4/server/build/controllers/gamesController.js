@@ -41,11 +41,11 @@ class GamesController {
     }
     //Actualizar usuario
     update(req, res) {
-        res.json({ text: 'updating a game ' + req.params.id });
+        res.json({ text: 'updating a game ' + req.params.Registro_Academico });
     }
     //Eliminar usuario
     delete(req, res) {
-        res.json({ text: 'deleting a game ' + req.params.id });
+        res.json({ text: 'deleting a game ' + req.params.Registro_Academico });
     }
 }
 const gamesController = new GamesController();

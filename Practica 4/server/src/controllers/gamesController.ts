@@ -13,6 +13,7 @@ class GamesController{
     public async unico(req: Request, res: Response): Promise<any> {
         const { Registro_Academico } = req.params;
         const usuario = await pool.query('SELECT * FROM usuario WHERE Registro_Academico = ?', [Registro_Academico])
+        
         if (usuario.length > 0){
             return res.json(usuario[0]);
         }
@@ -27,12 +28,12 @@ class GamesController{
 
     //Actualizar usuario
     public update(req: Request, res: Response){
-        res.json({text: 'updating a game ' + req.params.id})
+        res.json({text: 'updating a game ' + req.params.Registro_Academico})
     }
 
     //Eliminar usuario
     public delete(req: Request, res: Response){
-        res.json({text: 'deleting a game ' + req.params.id})
+        res.json({text: 'deleting a game ' + req.params.Registro_Academico})
     }
 }
 

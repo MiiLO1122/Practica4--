@@ -20,16 +20,16 @@ class GamesRoutes {
         this.router.get("/", gamesController.list)
 
         //ruta para listar unico
-        this.router.get("/:id", gamesController.unico)
+        this.router.get("/:Registro_Academico", gamesController.unico)
 
         //ruta post crear
         this.router.post("/", gamesController.create)
 
         //ruta put actualizar
-        this.router.put("/:id", gamesController.update)
+        this.router.put("/:Registro_Academico", gamesController.update)
 
         //ruta delete eliminar
-        this.router.delete("/:id", gamesController.delete)
+        this.router.delete("/:Registro_Academico", gamesController.delete)
 
     }
 

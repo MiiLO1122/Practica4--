@@ -17,13 +17,13 @@ class GamesRoutes {
         //ruta para listar todos
         this.router.get("/", gamesController_1.default.list);
         //ruta para listar unico
-        this.router.get("/:id", gamesController_1.default.unico);
+        this.router.get("/:Registro_Academico", gamesController_1.default.unico);
         //ruta post crear
         this.router.post("/", gamesController_1.default.create);
         //ruta put actualizar
-        this.router.put("/:id", gamesController_1.default.update);
+        this.router.put("/:Registro_Academico", gamesController_1.default.update);
         //ruta delete eliminar
-        this.router.delete("/:id", gamesController_1.default.delete);
+        this.router.delete("/:Registro_Academico", gamesController_1.default.delete);
     }
 }
 const gamesRoutes = new GamesRoutes();
