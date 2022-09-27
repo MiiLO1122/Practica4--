@@ -14,9 +14,16 @@ class GamesRoutes {
     }
     // definir ruta
     config() {
-        //ruta inicial
-        this.router.get("/", gamesController_1.default.index);
-        this.router.post("/", gamesController_1.default.index);
+        //ruta para listar todos
+        this.router.get("/", gamesController_1.default.list);
+        //ruta para listar unico
+        this.router.get("/:id", gamesController_1.default.unico);
+        //ruta post crear
+        this.router.post("/", gamesController_1.default.create);
+        //ruta put actualizar
+        this.router.put("/:id", gamesController_1.default.update);
+        //ruta delete eliminar
+        this.router.delete("/:id", gamesController_1.default.delete);
     }
 }
 const gamesRoutes = new GamesRoutes();

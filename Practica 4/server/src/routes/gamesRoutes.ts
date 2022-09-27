@@ -16,9 +16,21 @@ class GamesRoutes {
     // definir ruta
     config(): void{
 
-        //ruta inicial
-        this.router.get("/", gamesController.index)
-        this.router.post("/", gamesController.index)
+        //ruta para listar todos
+        this.router.get("/", gamesController.list)
+
+        //ruta para listar unico
+        this.router.get("/:id", gamesController.unico)
+
+        //ruta post crear
+        this.router.post("/", gamesController.create)
+
+        //ruta put actualizar
+        this.router.put("/:id", gamesController.update)
+
+        //ruta delete eliminar
+        this.router.delete("/:id", gamesController.delete)
+
     }
 
 
