@@ -2,7 +2,8 @@ import express, {Application} from 'express';
 
 class server{
 
-    public app: Application 
+    public app: Application;
+     
     constructor(){
         this.app = express();
     }
