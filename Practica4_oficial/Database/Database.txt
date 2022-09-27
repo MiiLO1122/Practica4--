@@ -1,6 +1,0 @@
-HOST: btowwqgmhdu4cl3fjyew-mysql.services.clever-cloud.com
-DATABSE NAME: btowwqgmhdu4cl3fjyew
-USER: ufiwgjimeexxkopm
-PASSWORD: EkYvvfdh2FFnFLOoiDZ4
-PORT: 3306
-URL: mysql://ufiwgjimeexxkopm:EkYvvfdh2FFnFLOoiDZ4@btowwqgmhdu4cl3fjyew-mysql.services.clever-cloud.com:3306/btowwqgmhdu4cl3fjyew
