@@ -1,7 +1,7 @@
 //definir un enrutador
 import { Router } from "express"
 
-
+import gamesController from '../controllers/gamesController'
 class GamesRoutes {
 
     //definir enrutador
@@ -16,7 +16,8 @@ class GamesRoutes {
     config(): void{
 
         //ruta inicial
-        this.router.get("/", (req, res) => res.send("Games"))
+        this.router.get("/", gamesController.index);
+        this.router.post('/',);
     }
 
 

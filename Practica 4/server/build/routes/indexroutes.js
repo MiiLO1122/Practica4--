@@ -2,6 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 //definir un enrutador
 const express_1 = require("express");
+const indexController_1 = require("../controllers/indexController");
 class IndexRoutes {
     constructor() {
         //definir enrutador
@@ -11,7 +12,7 @@ class IndexRoutes {
     // definir ruta
     config() {
         //ruta inicial
-        this.router.get("/", (req, res) => res.send("hello"));
+        this.router.get("/", indexController_1.indexController.index);
     }
 }
 const indexRoutes = new IndexRoutes();

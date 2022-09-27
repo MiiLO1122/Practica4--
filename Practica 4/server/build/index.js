@@ -32,7 +32,7 @@ class server {
     //para definir rutas
     routes() {
         //this.app.use(la importacion con la ruta)
-        this.app.use(indexRoutes_1.default);
+        this.app.use('/', indexRoutes_1.default);
         this.app.use("/api/games", gamesRoutes_1.default);
     }
     ;
