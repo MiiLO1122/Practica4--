@@ -1,7 +1,7 @@
 //definir un enrutador
 import { Router } from "express"
 
-
+import {indexController} from '../controllers/indexController'
 class IndexRoutes {
 
     //definir enrutador
@@ -16,7 +16,7 @@ class IndexRoutes {
     config(): void{
 
         //ruta inicial
-        this.router.get("/", (req, res) => res.send("hello"))
+        this.router.get("/",indexController.index)
     }
 
 
