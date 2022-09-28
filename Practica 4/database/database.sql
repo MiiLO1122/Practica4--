@@ -13,6 +13,7 @@ SET time_zone = "+00:00";
 -- Base de datos: practicasiniciales-p4
 --
 USE btowwqgmhdu4cl3fjyew;
+
 CREATE TABLE usuario(
     Registro_Academico VARCHAR(20) NOT NULL PRIMARY KEY, 
     nombres VARCHAR(100),
