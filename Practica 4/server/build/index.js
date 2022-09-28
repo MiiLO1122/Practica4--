@@ -8,7 +8,7 @@ const morgan_1 = __importDefault(require("morgan"));
 const cors_1 = __importDefault(require("cors"));
 //importacion de rutas
 const indexRoutes_1 = __importDefault(require("./routes/indexRoutes"));
-const gamesRoutes_1 = __importDefault(require("./routes/gamesRoutes"));
+const usuarioRoutes_1 = __importDefault(require("./routes/usuarioRoutes"));
 class server {
     //para inicializar express
     constructor() {
@@ -33,7 +33,7 @@ class server {
     routes() {
         //this.app.use(la importacion con la ruta)
         this.app.use('/', indexRoutes_1.default);
-        this.app.use("/api/games", gamesRoutes_1.default);
+        this.app.use("/api/usuario", usuarioRoutes_1.default);
     }
     ;
     //para ejecutar el app.listen

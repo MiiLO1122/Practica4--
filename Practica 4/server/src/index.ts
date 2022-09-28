@@ -4,7 +4,7 @@ import cors from "cors"
 
 //importacion de rutas
 import indexRoutes from "./routes/indexRoutes";
-import gamesRoutes from "./routes/gamesRoutes";
+import usuarioRoutes from "./routes/usuarioRoutes";
 
 
 class server {
@@ -44,8 +44,7 @@ class server {
     routes(): void {
         //this.app.use(la importacion con la ruta)
         this.app.use('/', indexRoutes);
-        this.app.use("/api/games",gamesRoutes)
-
+        this.app.use("/api/usuario", usuarioRoutes)
     };
 
     //para ejecutar el app.listen
