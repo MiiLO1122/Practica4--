@@ -28,9 +28,6 @@ class GamesRoutes {
         //ruta put actualizar
         this.router.put("/:Registro_Academico", gamesController.update)
 
-        //ruta delete eliminar
-        this.router.delete("/:Registro_Academico", gamesController.delete)
-
     }
 
 

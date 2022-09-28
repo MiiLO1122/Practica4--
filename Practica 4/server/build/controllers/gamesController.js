@@ -14,6 +14,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const database_1 = __importDefault(require("../database"));
 class GamesController {
+    //pool.query('DESCRIBE usuario'); esta acción solo verifica que existe la conexión a la base de datos
     //Listar usuarios
     list(req, res) {
         return __awaiter(this, void 0, void 0, function* () {
@@ -26,6 +27,7 @@ class GamesController {
         return __awaiter(this, void 0, void 0, function* () {
             const { Registro_Academico } = req.params;
             const usuario = yield database_1.default.query('SELECT * FROM usuario WHERE Registro_Academico = ?', [Registro_Academico]);
+            //Busca el usuario con el mismo Registro_Academico
             if (usuario.length > 0) {
                 return res.json(usuario[0]);
             }
@@ -41,11 +43,11 @@ class GamesController {
     }
     //Actualizar usuario
     update(req, res) {
-        res.json({ text: 'updating a game ' + req.params.Registro_Academico });
-    }
-    //Eliminar usuario
-    delete(req, res) {
-        res.json({ text: 'deleting a game ' + req.params.Registro_Academico });
+        return __awaiter(this, void 0, void 0, function* () {
+            const { Registro_Academico } = req.params;
+            yield database_1.default.query('UPDATE usuario set ? WHERE Registro_Academico = ?', [req.body, Registro_Academico]);
+            res.json({ message: 'El usuario ha sido actualizado' });
+        });
     }
 }
 const gamesController = new GamesController();

@@ -22,8 +22,6 @@ class GamesRoutes {
         this.router.post("/", gamesController_1.default.create);
         //ruta put actualizar
         this.router.put("/:Registro_Academico", gamesController_1.default.update);
-        //ruta delete eliminar
-        this.router.delete("/:Registro_Academico", gamesController_1.default.delete);
     }
 }
 const gamesRoutes = new GamesRoutes();
