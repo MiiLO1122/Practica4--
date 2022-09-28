@@ -38,10 +38,6 @@ class GamesController{
     }
 
     
-    public index (req: Request, res: Response) {
-        pool.query("DESCRIBE games")
-        res.json({"text": "Hello"})
-    }
 }
 
 const gamesController = new GamesController();

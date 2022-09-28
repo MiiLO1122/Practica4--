@@ -49,10 +49,6 @@ class GamesController {
             res.json({ message: 'El usuario ha sido actualizado' });
         });
     }
-    index(req, res) {
-        database_1.default.query("DESCRIBE games");
-        res.json({ "text": "Hello" });
-    }
 }
 const gamesController = new GamesController();
 exports.default = gamesController;
