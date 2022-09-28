@@ -5,18 +5,23 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
-import { FormComponent } from './components/form/form.component';
 import { ListComponent } from './components/list/list.component';
-
-import{ PrincipalService} from './services/principal.service'
+import{ PrincipalService} from './services/principal.service';
+import { LoginComponent } from './components/login/login.component';
+import { ForoComponent } from './components/foro/foro.component';
+import { CreateComponent } from './components/create/create.component';
+import { ConocenosComponent } from './components/conocenos/conocenos.component'
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
-    FormComponent,
-    ListComponent
+    ListComponent,
+    LoginComponent,
+    ForoComponent,
+    CreateComponent,
+    ConocenosComponent
   ],
   imports: [
     BrowserModule,
