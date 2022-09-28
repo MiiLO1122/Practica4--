@@ -1,6 +1,7 @@
-import {Request, Response} from 'express';
+import { Request, Response } from "express";
 
-import pool from '../database'
+import pool from "../database";
+
 class GamesController{
 
     //pool.query('DESCRIBE usuario'); esta acción solo verifica que existe la conexión a la base de datos
@@ -36,6 +37,11 @@ class GamesController{
         res.json({message: 'El usuario ha sido actualizado'})
     }
 
+    
+    public index (req: Request, res: Response) {
+        pool.query("DESCRIBE games")
+        res.json({"text": "Hello"})
+    }
 }
 
 const gamesController = new GamesController();

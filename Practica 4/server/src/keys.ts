@@ -1,6 +1,6 @@
 //configuracion de la base de datos
 export default {
-
+    
     database: {
         host: "btowwqgmhdu4cl3fjyew-mysql.services.clever-cloud.com",
         user: "ufiwgjimeexxkopm",
