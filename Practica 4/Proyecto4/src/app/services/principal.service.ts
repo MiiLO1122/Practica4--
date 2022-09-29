@@ -17,7 +17,7 @@ export class PrincipalService {
   constructor(private http: HttpClient) { }
 
   login(form: any) {
-    let direccion = this.API_URI + "inicio/login"
+    let direccion = this.API_URI + "inicio/foro"
     return this.http.post<any>(direccion, form);
   }
 
