@@ -20,6 +20,8 @@ class usuarioRoutes {
         this.router.get("/:Registro_Academico", usuarioController_1.default.unico);
         //ruta post crear
         this.router.post("/", usuarioController_1.default.create);
+        //ruta post crear
+        this.router.post("/login", usuarioController_1.default.login);
         //ruta put actualizar
         this.router.put("/:Registro_Academico", usuarioController_1.default.update);
     }

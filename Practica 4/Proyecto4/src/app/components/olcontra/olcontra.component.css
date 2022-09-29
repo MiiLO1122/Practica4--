@@ -20,13 +20,13 @@ body{
     width: 70%;
 }
 
-.form-register {
+.form-contra {
     margin: center;
     width: 400px;
-    height: 520px;
+    height: 300px;
     position: absolute;
     margin: auto;
-    margin-top: 180px;
+    margin-top: 280px;
     margin-left: 725px;
     background: #4e4d4d;
     box-shadow: 7px 13px 37px #000;
@@ -35,7 +35,7 @@ body{
     color: white;
 }
 
-.form-register h5{
+.form-contra h5{
     margin: 0;
     text-align: center;
     height: 40px;
@@ -64,18 +64,18 @@ body{
     margin-bottom: 16px;
 }
 
-.form-register p{
+.form-contra p{
     height: 40px;
     text-align: center;
     border-bottom: 1px solid;
 }
 
-.form-register a{
+.form-contra a{
     color: white;
     text-decoration: none;
     font-size: 14px;
 }
 
-.form-register a:hover{
+.form-contra a:hover{
     text-decoration: underline;
 }

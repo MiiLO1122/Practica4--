@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, RouterEvent} from "@angular/router"
-
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 import { PrincipalService } from 'src/app/services/principal.service'; 
-import { LoginI } from 'src/app/models/LoginI';
-import { ResponseI } from 'src/app/models/ResponseI';
+import{ LoginI } from 'src/app/models/LoginI'
+import { ResponseI } from 'src/app/models/ResponseI'
 
 @Component({
   selector: 'app-login',
@@ -41,7 +41,7 @@ export class LoginComponent implements OnInit {
   
 
   this.api.login(this.usuariologear).subscribe(data => {
-    if(data.text== 'Credenciales correctas'){
+    if(data.text == 'Credenciales correctas'){
       console.log("Todo bien");
 
       this.router.navigate(['usuario', this.Registro_Academico])

@@ -11,7 +11,7 @@ html{
 
 body{
     height: 100vh;
-    font-family: arial;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .logo{

@@ -43,21 +43,21 @@ class usuarioController{
         const registro = req.body.Registro_Academico;
         const pass = req.body.password;
         
-        if (registro && pass) {
-            pool.query('SELECT * FROM usuario WHERE Registro_Academico = ?', [registro], function(err, usuario, fields){
-                if (err) throw err;
-                if (usuario.length>0 && usuario[0].password==pass){
-                    res.json({text: 'Credenciales correctas', Registro_Academico: usuario[0].Registro_Academico, nombres: usuario[0].nombres, apellidos: usuario[0].apellidos, password: usuario[0].password, correo: usuario[0].correo});
-                    console.log('Ok')
-                }
-                else{
-                    res.json({text: 'Credenciales incorrectas'});
-                    console.log('Not valid')
-                };
+        //if (registro && pass) {
+          //  pool.query('SELECT * FROM usuario WHERE Registro_Academico = ?', [registro], function(err, usuario, fields){
+            //    if (err) throw err;
+              //  if (usuario.length>0 && usuario[0].password==pass){
+                //    res.json({text: 'Credenciales correctas', Registro_Academico: usuario[0].Registro_Academico, nombres: usuario[0].nombres, apellidos: usuario[0].apellidos, password: usuario[0].password, correo: usuario[0].correo});
+                  //  console.log('Ok')
+                //}
+                //else{
+                  //  res.json({text: 'Credenciales incorrectas'});
+                    //console.log('Not valid')
+                //};
 
-            });
-        }
-        else{res.json({text:'No hay datos'})};
+            //});
+        //}
+        //else{res.json({text:'No hay datos'})};
     } 
     
 }

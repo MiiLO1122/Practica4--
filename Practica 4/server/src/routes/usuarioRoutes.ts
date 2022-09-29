@@ -25,6 +25,9 @@ class usuarioRoutes {
         //ruta post crear
         this.router.post("/", usuarioController.create)
 
+        //ruta post crear
+        this.router.post("/login", usuarioController.login)
+
         //ruta put actualizar
         this.router.put("/:Registro_Academico", usuarioController.update)
 
