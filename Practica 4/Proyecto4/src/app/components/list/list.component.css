@@ -4,71 +4,6 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-html{
-    background-image: url('fondo.jpg');
-    background-size: cover;
-}
-
-body{
-        height: 100vh;
-}
-
-#singrid{
-    background-image: url('singrid.jpg');
-    background-size: cover;
-    width: 250px;
-    height: 300px;
-    margin-bottom: 10px;
-    margin-left: 30px;
-}
-
-#singrid p{
-    padding-top: 110px;
-    padding-left: 275px;
-    width: 100%;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    font-size: large;
-}
-
-#andres{
-    background-image: url('emilio.jpg');
-    background-size: cover;
-    width: 250px;
-    height: 300px;
-    margin-left: 30px;
-
-}
-
-#andres p{
-    padding-top: 110px;
-    padding-left: 275px;
-    width: 100%;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    font-size: large;
-}
-
-#luis{
-    background-image: url('luis.jpg');
-    background-size: cover;
-    width: 250px;
-    height: 300px;
-    margin-bottom: 10px;
-    margin-left: 30px;
-}
-
-#luis p{
-    padding-top: 110px;
-    padding-left: 275px;
-    width: 100%;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    font-size: large;
-}
 
 .botones{
     margin-top: 120px;
@@ -77,17 +12,14 @@ body{
     top: 405px;
 }
 .buttons{
+    margin-left: 5px;
     font-size: medium;
     width: 300px;
     height: 40px;
-    background: purple;
+    background: #017bab;
     border: none;
     color: white;
     margin-bottom: 16px;
-}
-.buttons:hover{
-    text-decoration: underline;
-    background-color: blueviolet;
 }
 
 section{
@@ -115,7 +47,15 @@ h1{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: xxx-large;
 }
+
 h2{
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.frases{
+    margin-left: 30px;
+    margin-top: 150px;
+    font-size: x-large;
+    color: white;
 }
